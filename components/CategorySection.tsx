@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Category } from '../types';
 import ServiceCard from './ServiceCard';
 
@@ -20,15 +21,40 @@ const CategorySection: React.FC<CategorySectionProps> = ({
 }) => {
   const [activeSubTab, setActiveSubTab] = useState<string>(category.subcategories[0]?.id || '');
 
+  React.useEffect(() => {
+    if (category.subcategories.length > 0) {
+        // If current activeSubTab is not in the new category's subcategories, reset it
+        const exists = category.subcategories.some(sub => sub.id === activeSubTab);
+        if (!exists) {
+            setActiveSubTab(category.subcategories[0].id);
+        }
+    }
+  }, [category, activeSubTab]);
+
   const activeSubcategory = category.subcategories.find(sub => sub.id === activeSubTab);
+
+  const getSlug = (id: string) => {
+      if (id === 'branding') return 'branding';
+      if (id === 'visual') return 'visual';
+      if (id === 'digital') return 'digital';
+      if (id.startsWith('new-cat') || id.includes('ai')) return 'ai-services';
+      return id; 
+  };
+  
+  const slug = getSlug(category.id);
 
   return (
     <div className={`mb-16 transition-opacity duration-500 ${isActive ? 'opacity-100' : 'opacity-80 hover:opacity-100'}`}>
-      <div className="flex items-baseline gap-3 mb-6 border-b border-black pb-2">
-        <h2 className={`text-2xl font-light uppercase tracking-tight ${isActive ? 'text-black' : 'text-gray-400'}`}>
-          {category.title}
-        </h2>
-        {isActive && <span className="text-[9px] uppercase tracking-widest bg-black text-white px-2 py-0.5 font-bold">ONLINE</span>}
+      <div className="flex items-baseline gap-3 mb-6 border-b border-black pb-2 justify-between">
+        <div className="flex items-baseline gap-3">
+            <h2 className={`text-2xl font-light uppercase tracking-tight ${isActive ? 'text-black' : 'text-gray-400'}`}>
+            {category.title}
+            </h2>
+            {isActive && <span className="text-[9px] uppercase tracking-widest bg-black text-white px-2 py-0.5 font-bold">ONLINE</span>}
+        </div>
+        <Link to={`/category/${slug}`} className="text-[10px] font-mono uppercase tracking-widest text-gray-400 hover:text-black hover:underline transition-colors">
+            + Info & Philosophy
+        </Link>
       </div>
       
       {/* Horizontal Tabs Navigation */}

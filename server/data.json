@@ -1,0 +1,752 @@
+{
+  "categories": [
+    {
+      "id": "branding",
+      "title": "Branding & Design",
+      "description": "Marca, identidad y diseño estratégico",
+      "subcategories": [
+        {
+          "id": "b-identity",
+          "title": "Identidad Core",
+          "services": [
+            {
+              "id": "b-id-creation",
+              "name": "Identidad Visual",
+              "description": "El ADN visual completo de tu marca.",
+              "stats": {
+                "brand": 10,
+                "conversion": 2,
+                "reach": 1
+              },
+              "relatedServiceIds": [
+                "d-w-landing",
+                "v-p-corp"
+              ],
+              "tiers": [
+                {
+                  "id": "essential",
+                  "name": "Essential",
+                  "price": 600,
+                  "duration": 2,
+                  "unit": "weeks",
+                  "description": "Logo Principal\nPaleta Cromática\nTipografías base",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "pro",
+                  "name": "Pro",
+                  "price": 1080,
+                  "duration": 3,
+                  "unit": "weeks",
+                  "description": "Sistemas de Logos (3 props)\nManual de Uso Básico\nDiseño Papelería (2 piezas)",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "premium",
+                  "name": "Premium",
+                  "price": 1800,
+                  "duration": 4,
+                  "unit": "weeks",
+                  "description": "Estrategia de Marca\nBrand Book Extenso\nUniverso Gráfico\nManual de Estilo Social Media",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                }
+              ]
+            },
+            {
+              "id": "b-id-naming",
+              "name": "Naming & Tagline",
+              "description": "Nombre y eslogan estratégico.",
+              "stats": {
+                "brand": 9,
+                "conversion": 3,
+                "reach": 2
+              },
+              "relatedServiceIds": [
+                "b-id-creation"
+              ],
+              "tiers": [
+                {
+                  "id": "essential",
+                  "name": "Essential",
+                  "price": 250,
+                  "duration": 1,
+                  "unit": "weeks",
+                  "description": "3 propuestas de nombre\nComprobación de dominio",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "pro",
+                  "name": "Pro",
+                  "price": 450,
+                  "duration": 2,
+                  "unit": "weeks",
+                  "description": "5 propuestas creativas\nTagline / Eslogan\nConcepto de marca",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "premium",
+                  "name": "Premium",
+                  "price": 750,
+                  "duration": 2,
+                  "unit": "weeks",
+                  "description": "10 propuestas\nInforme de viabilidad legal\nStorytelling de marca",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                }
+              ]
+            },
+            {
+              "id": "b-id-manual",
+              "name": "Manual de Marca",
+              "description": "La biblia de tu identidad.",
+              "stats": {
+                "brand": 8,
+                "conversion": 1,
+                "reach": 0
+              },
+              "relatedServiceIds": [
+                "b-g-dossier"
+              ],
+              "tiers": [
+                {
+                  "id": "essential",
+                  "name": "Essential",
+                  "price": 200,
+                  "duration": 4,
+                  "unit": "days",
+                  "description": "Guía de logo y color",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "pro",
+                  "name": "Pro",
+                  "price": 360,
+                  "duration": 6,
+                  "unit": "days",
+                  "description": "Manual técnico completo\nGrid constructivo\nAplicaciones básicas",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "premium",
+                  "name": "Premium",
+                  "price": 600,
+                  "duration": 8,
+                  "unit": "days",
+                  "description": "Brand Book 360º\nTono de voz\nGuía fotográfica",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-graphic",
+          "title": "Diseño Gráfico",
+          "services": [
+            {
+              "id": "b-g-pack",
+              "name": "Packaging",
+              "description": "Diseño de envases y etiquetas.",
+              "stats": {
+                "brand": 7,
+                "conversion": 6,
+                "reach": 2
+              },
+              "relatedServiceIds": [
+                "v-p-product"
+              ],
+              "tiers": [
+                {
+                  "id": "essential",
+                  "name": "Essential",
+                  "price": 300,
+                  "duration": 1,
+                  "unit": "weeks",
+                  "description": "Etiqueta frontal única",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "pro",
+                  "name": "Pro",
+                  "price": 540,
+                  "duration": 2,
+                  "unit": "weeks",
+                  "description": "Caja o envase completo\nArtes finales\nMockup 3D",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "premium",
+                  "name": "Premium",
+                  "price": 900,
+                  "duration": 2,
+                  "unit": "weeks",
+                  "description": "Línea completa (3 SKUs)\nMateriales especiales\nUnboxing experience",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                }
+              ]
+            },
+            {
+              "id": "b-g-dossier",
+              "name": "Dossier de Venta",
+              "description": "Presentaciones que cierran tratos.",
+              "stats": {
+                "brand": 5,
+                "conversion": 9,
+                "reach": 1
+              },
+              "relatedServiceIds": [
+                "v-p-corp"
+              ],
+              "tiers": [
+                {
+                  "id": "essential",
+                  "name": "Essential",
+                  "price": 250,
+                  "duration": 1,
+                  "unit": "weeks",
+                  "description": "Diseño 5 diapositivas",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "pro",
+                  "name": "Pro",
+                  "price": 450,
+                  "duration": 2,
+                  "unit": "weeks",
+                  "description": "Dossier 15 páginas\nInfografías a medida",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "premium",
+                  "name": "Premium",
+                  "price": 750,
+                  "duration": 2,
+                  "unit": "weeks",
+                  "description": "Presentación interactiva\nContenido redactado\nEstrategia comercial",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visual",
+      "title": "Visual Content",
+      "description": "Producción de activos foto y video",
+      "subcategories": [
+        {
+          "id": "v-photo",
+          "title": "Fotografía",
+          "services": [
+            {
+              "id": "v-p-product",
+              "name": "Foto E-commerce",
+              "description": "Producto para catálogo.",
+              "stats": {
+                "brand": 4,
+                "conversion": 10,
+                "reach": 3
+              },
+              "relatedServiceIds": [
+                "d-w-shop"
+              ],
+              "tiers": [
+                {
+                  "id": "essential",
+                  "name": "Essential",
+                  "price": 250,
+                  "duration": 2,
+                  "unit": "days",
+                  "description": "10 fotos fondo blanco",
+                  "resources": {
+                    "photos": 10,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "pro",
+                  "name": "Pro",
+                  "price": 450,
+                  "duration": 3,
+                  "unit": "days",
+                  "description": "20 fotos + Retoque avanzado\nBodegón creativo (2)",
+                  "resources": {
+                    "photos": 15,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "premium",
+                  "name": "Premium",
+                  "price": 750,
+                  "duration": 4,
+                  "unit": "days",
+                  "description": "Catálogo completo 50 fotos\nLifestyle context\nDirección de arte",
+                  "resources": {
+                    "photos": 30,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                }
+              ]
+            },
+            {
+              "id": "v-p-lifestyle",
+              "name": "Foto Lifestyle",
+              "description": "Tu marca en situaciones reales.",
+              "stats": {
+                "brand": 8,
+                "conversion": 5,
+                "reach": 6
+              },
+              "relatedServiceIds": [
+                "b-g-social"
+              ],
+              "tiers": [
+                {
+                  "id": "essential",
+                  "name": "Essential",
+                  "price": 300,
+                  "duration": 1,
+                  "unit": "days",
+                  "description": "Sesión 2h exterior",
+                  "resources": {
+                    "photos": 20,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "pro",
+                  "name": "Pro",
+                  "price": 540,
+                  "duration": 2,
+                  "unit": "days",
+                  "description": "Media jornada + Modelo\nLocalización incluida",
+                  "resources": {
+                    "photos": 30,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "premium",
+                  "name": "Premium",
+                  "price": 900,
+                  "duration": 2,
+                  "unit": "days",
+                  "description": "Jornada completa cine\nLookbook de temporada\nDerechos de uso total",
+                  "resources": {
+                    "photos": 60,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "v-video",
+          "title": "Video Ads & Social",
+          "services": [
+            {
+              "id": "v-v-social",
+              "name": "Reels & TikToks",
+              "description": "Contenido vertical viral.",
+              "stats": {
+                "brand": 4,
+                "conversion": 6,
+                "reach": 10
+              },
+              "relatedServiceIds": [
+                "d-p-meta"
+              ],
+              "tiers": [
+                {
+                  "id": "essential",
+                  "name": "Essential",
+                  "price": 200,
+                  "duration": 3,
+                  "unit": "days",
+                  "description": "Edición de 3 videos",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 3,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "pro",
+                  "name": "Pro",
+                  "price": 360,
+                  "duration": 5,
+                  "unit": "days",
+                  "description": "Grabación + Edición 5 videos\nSubtítulos dinámicos",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 5,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "premium",
+                  "name": "Premium",
+                  "price": 600,
+                  "duration": 6,
+                  "unit": "days",
+                  "description": "Estrategia mensual 12 videos\nGuionización profesional\nUGC & Hooks",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 9,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "digital",
+      "title": "Digital & Growth",
+      "description": "Desarrollo web y publicidad",
+      "subcategories": [
+        {
+          "id": "d-web",
+          "title": "Web Design",
+          "services": [
+            {
+              "id": "d-w-landing",
+              "name": "Landing Page",
+              "description": "Diseñada para convertir.",
+              "stats": {
+                "brand": 3,
+                "conversion": 10,
+                "reach": 4
+              },
+              "relatedServiceIds": [
+                "d-p-meta",
+                "d-p-google"
+              ],
+              "tiers": [
+                {
+                  "id": "essential",
+                  "name": "Essential",
+                  "price": 500,
+                  "duration": 1,
+                  "unit": "weeks",
+                  "description": "Diseño One-page básico",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "pro",
+                  "name": "Pro",
+                  "price": 900,
+                  "duration": 2,
+                  "unit": "weeks",
+                  "description": "Landing persuasiva (Copywriting)\nOptimización de carga",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "premium",
+                  "name": "Premium",
+                  "price": 1500,
+                  "duration": 2,
+                  "unit": "weeks",
+                  "description": "Landing A/B Testing\nEmbudos de venta\nIntegración CRM",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                }
+              ]
+            },
+            {
+              "id": "d-w-shop",
+              "name": "E-commerce",
+              "description": "Tu tienda abierta 24/7.",
+              "stats": {
+                "brand": 7,
+                "conversion": 9,
+                "reach": 5
+              },
+              "relatedServiceIds": [
+                "v-p-product"
+              ],
+              "tiers": [
+                {
+                  "id": "essential",
+                  "name": "Essential",
+                  "price": 1200,
+                  "duration": 4,
+                  "unit": "weeks",
+                  "description": "Tienda Shopify/Woo base",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "pro",
+                  "name": "Pro",
+                  "price": 2160,
+                  "duration": 6,
+                  "unit": "weeks",
+                  "description": "Diseño a medida (UX/UI)\nPasarela de pagos\nSEO básico",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "premium",
+                  "name": "Premium",
+                  "price": 3600,
+                  "duration": 8,
+                  "unit": "weeks",
+                  "description": "E-commerce avanzado\nAutomatización emails\nGestión de stock",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d-marketing",
+          "title": "Marketing Ads",
+          "services": [
+            {
+              "id": "d-p-meta",
+              "name": "Meta Ads",
+              "description": "Publicidad en FB e Instagram.",
+              "stats": {
+                "brand": 2,
+                "conversion": 9,
+                "reach": 10
+              },
+              "relatedServiceIds": [
+                "v-v-social"
+              ],
+              "tiers": [
+                {
+                  "id": "essential",
+                  "name": "Essential",
+                  "price": 300,
+                  "duration": 2,
+                  "unit": "days",
+                  "description": "Setup de cuenta y pixel",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "pro",
+                  "name": "Pro",
+                  "price": 540,
+                  "duration": 3,
+                  "unit": "days",
+                  "description": "Gestión mensual (1 campaña)\nCreatividades base",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                },
+                {
+                  "id": "premium",
+                  "name": "Premium",
+                  "price": 900,
+                  "duration": 4,
+                  "unit": "days",
+                  "description": "Estrategia de Funnel\nScaling semanal\nReporting avanzado",
+                  "resources": {
+                    "photos": 0,
+                    "videos": 0,
+                    "posts": 0,
+                    "hours": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectives": [
+    {
+      "id": "reach",
+      "title": "Alcance e Impacto",
+      "subtitle": "REACH_EXPANSION",
+      "icon": "reach",
+      "recommendedServiceIds": [
+        "v-v-social",
+        "v-s-social",
+        "d-p-meta",
+        "v-c-ugc"
+      ]
+    },
+    {
+      "id": "sales",
+      "title": "Ventas y Conversión",
+      "subtitle": "SALE_OPTIMIZATION",
+      "icon": "sales",
+      "recommendedServiceIds": [
+        "d-w-landing",
+        "d-p-meta",
+        "d-p-google",
+        "d-c-copy",
+        "d-p-funnel"
+      ]
+    },
+    {
+      "id": "identity",
+      "title": "Nueva Identidad",
+      "subtitle": "BRAND_DNA",
+      "icon": "identity",
+      "recommendedServiceIds": [
+        "b-id-creation",
+        "b-id-manual",
+        "b-id-naming",
+        "b-g-social"
+      ]
+    },
+    {
+      "id": "product",
+      "title": "Lanzamiento Prod.",
+      "subtitle": "ASSET_PROD",
+      "icon": "product",
+      "recommendedServiceIds": [
+        "v-p-product",
+        "v-v-product",
+        "b-g-pack"
+      ]
+    },
+    {
+      "id": "digital",
+      "title": "Presencia Digital",
+      "subtitle": "CORE_STRUCTURE",
+      "icon": "digital",
+      "recommendedServiceIds": [
+        "d-w-corp",
+        "d-w-seo",
+        "d-w-mant",
+        "v-p-corp"
+      ]
+    }
+  ]
+}

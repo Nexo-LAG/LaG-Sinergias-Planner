@@ -23,6 +23,14 @@ const SummaryPanel: React.FC<SummaryPanelProps> = ({
   onTogglePortfolio
 }) => {
   const [showProtocol, setShowProtocol] = useState(false);
+  const [payWithBits, setPayWithBits] = useState(false);
+  const [bitsAmount, setBitsAmount] = useState(0);
+
+  React.useEffect(() => {
+    if (bitsAmount > totals.finalPrice * 100) {
+        setBitsAmount(totals.finalPrice * 100);
+    }
+  }, [totals.finalPrice, bitsAmount]);
 
   if (selectedCount === 0) {
     return (
@@ -59,12 +67,48 @@ const SummaryPanel: React.FC<SummaryPanelProps> = ({
            <div>
               <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Inversión Final</p>
               <h2 className="text-5xl font-black font-mono tracking-tighter">{totals.finalPrice}€</h2>
+              <p className="text-xs font-mono text-purple-600 font-bold mt-1">{(totals.finalPrice * 100).toLocaleString()} [B1T$!]</p>
            </div>
            <div className="text-right">
               <span className="bg-black text-white px-3 py-1 text-[10px] font-bold font-mono">
                 ~ {Math.ceil(totals.maxDays / 5)} SEMANAS
               </span>
            </div>
+        </div>
+
+        {/* Payment with Bits Section */}
+        <div className="mb-6 p-4 bg-purple-50 border border-purple-100 rounded-lg">
+            <div className="flex items-center justify-between mb-3 cursor-pointer" onClick={() => setPayWithBits(!payWithBits)}>
+                <div className="flex items-center gap-2">
+                    <div className={`w-4 h-4 border border-purple-600 flex items-center justify-center ${payWithBits ? 'bg-purple-600' : 'bg-white'}`}>
+                        {payWithBits && <div className="w-2 h-2 bg-white" />}
+                    </div>
+                    <span className="text-[10px] font-bold uppercase text-purple-900">Pagar con [B1T$!]</span>
+                </div>
+                <span className="text-[10px] font-mono text-purple-400">1€ = 100 Bits</span>
+            </div>
+            
+            {payWithBits && (
+                <div className="space-y-3 animate-fade">
+                    <div className="flex justify-between text-[10px] font-mono font-bold">
+                        <span>Usar: {bitsAmount.toLocaleString()} Bits</span>
+                        <span>-{(bitsAmount / 100).toFixed(2)}€</span>
+                    </div>
+                    <input 
+                        type="range" 
+                        min="0" 
+                        max={totals.finalPrice * 100} 
+                        step="100"
+                        value={bitsAmount}
+                        onChange={(e) => setBitsAmount(parseInt(e.target.value))}
+                        className="w-full h-1 bg-purple-200 rounded-lg appearance-none cursor-pointer accent-purple-600"
+                    />
+                    <div className="flex justify-between items-center pt-2 border-t border-purple-200">
+                        <span className="text-[10px] uppercase text-gray-500 font-bold">Restante a pagar:</span>
+                        <span className="text-lg font-black font-mono">{(totals.finalPrice - (bitsAmount / 100)).toFixed(2)}€</span>
+                    </div>
+                </div>
+            )}
         </div>
 
         {/* LISTADO DE SERVICIOS Y COSTES */}

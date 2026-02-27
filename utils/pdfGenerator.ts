@@ -1,18 +1,13 @@
 
 
 import { Category, Totals, SelectedServiceUI } from '../types';
+import { jsPDF } from 'jspdf';
 
 export const generatePDF = (
   selectedServices: SelectedServiceUI[],
   activeCategories: Category[],
   totals: Totals
 ) => {
-  if (typeof window.jspdf === 'undefined') {
-    alert('Error al cargar la librería de PDF.');
-    return;
-  }
-
-  const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
   const pageWidth = doc.internal.pageSize.getWidth();
   const margin = 20;

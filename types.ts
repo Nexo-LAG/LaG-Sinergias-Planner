@@ -16,6 +16,7 @@ export interface Tier {
   id: 'essential' | 'pro' | 'premium';
   name: string; 
   price: number;
+  discountPrice?: number; // Optional discounted price for bundles/specials
   duration: number;
   // Added 'months' to support monthly recurring services
   unit: 'days' | 'weeks' | 'hours' | 'months';
@@ -86,13 +87,4 @@ export interface Recommendation {
   serviceId: string; // The service to add OR remove
   serviceName: string;
   potentialStats?: ServiceStats;
-}
-
-// Global declaration for jsPDF loaded via CDN
-declare global {
-  interface Window {
-    jspdf: {
-      jsPDF: new (options?: any) => any;
-    };
-  }
 }

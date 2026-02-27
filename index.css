@@ -1,0 +1,21 @@
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-brand-red: #cd2027;
+  
+  --animate-fade: fadeIn 0.4s ease-out forwards;
+  --animate-bounce: bounce 1s infinite;
+
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+}

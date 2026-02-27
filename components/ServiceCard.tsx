@@ -44,7 +44,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, selectedTierId, isRe
           {Object.entries(service.stats).map(([key, val]) => (
             <div key={key} className="flex-1">
               <div className="h-0.5 bg-gray-100 overflow-hidden">
-                <div className="h-full bg-black transition-all" style={{width: `${(val/10)*100}%`}} />
+                <div className="h-full bg-black transition-all" style={{width: `${((val as number)/10)*100}%`}} />
               </div>
               <span className="text-[7px] uppercase font-bold text-gray-300 tracking-tighter">{key}</span>
             </div>
